@@ -1,34 +1,29 @@
-# Santuario de Mascotas - POO
+# Sistema Veterinario - Santuario de Mascotas
 
-Proyecto PHP/MySQL que integra la guía de Programación Orientada a Objetos y el instructivo del Dashboard Administrativo Veterinario con W3.CSS.
+## ¿Por qué el sistema no aparece en esta página?
 
-## Instalación en XAMPP
+Este proyecto utiliza PHP y una base de datos MySQL. GitHub Pages no puede ejecutar este tipo de archivos, por eso el sistema veterinario no se muestra aquí.
 
-1. Copia la carpeta `santuario-mascotas` dentro de `C:\\xampp\\htdocs`.
-2. Inicia Apache y MySQL desde XAMPP.
-3. Abre `http://localhost/phpmyadmin`.
-4. En **Importar**, selecciona `database/santuario_mascotas.sql`.
-5. Visita `http://localhost/santuario-mascotas/`.
+El proyecto no está dañado. GitHub solamente se está utilizando para guardar y mostrar el código.
 
-Si ya instalaste la primera versión, no vuelvas a importar la base completa: importa solamente `database/migracion_dashboard.sql` para agregar DNI y observaciones sin borrar registros.
+## ¿Cómo ejecutar el sistema?
 
-La configuración predeterminada utiliza usuario `root` sin contraseña. Si tu MySQL usa otros datos, edita `config/config.php`.
+1. Descarga el proyecto.
+2. Copia la carpeta en `C:\xampp\htdocs`.
+3. Inicia Apache y MySQL en XAMPP.
+4. Importa el archivo `database/santuario_mascotas.sql` en phpMyAdmin.
+5. Abre en el navegador:
 
-## POO aplicada
+http://localhost/santuario-mascotas/
 
-- `Mascota`: 8 propiedades protegidas, constructor, getters, setters y validación.
-- `Conexion`: conexión PDO segura con excepciones.
-- `MascotaRepositorio extends Conexion`: herencia y guardado con consulta preparada.
-- `limpiarEntrada()`: elimina espacios, barras invertidas y etiquetas HTML.
-- `procesar.php`: ejecuta el flujo completo y controla errores.
+## Tecnologías utilizadas
 
-## Dashboard solicitado
+- PHP
+- MySQL
+- Programación Orientada a Objetos
+- HTML
+- CSS
+- JavaScript
+- W3.CSS
 
-- Archivo principal exacto: `dashboard_vet.php`.
-- Barra lateral con `w3-sidebar` y `w3-bar-block`.
-- Menús y submenús con `w3-hover-blue`.
-- Secciones con `w3-card`.
-- Formulario distribuido con `w3-row-padding`.
-- Alergias/Observaciones mediante `w3-textarea`.
-- Botones funcionales para guardar y limpiar.
-- Diseño adaptable a computadoras, tabletas y teléfonos.
+Para publicar el sistema en Internet se necesita un hosting compatible con PHP y MySQL.
